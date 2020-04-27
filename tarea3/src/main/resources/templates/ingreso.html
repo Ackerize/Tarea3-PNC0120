@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de nuevo alumno</title>
+</head>
+
+<body>
+
+    <form method="POST" th:action=@{/alumno}>
+            <label>Nombres</label>
+            <input type="text" name="nombres" placeholder="Nombres">
+            
+            <br/>
+            <br/>
+            
+            <label>Apellidos</label>
+            <input type="text"name="apellidos" placeholder="Apellido">
+            
+			<br/>
+			<br/>
+			
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fechaNacimiento">
+            
+			<br/>
+			<br/>
+			
+            <label>Lugar de Nacimiento</label>
+            <input type="text" placeholder="Lugar de nacimiento" name="lugarNacimiento" required>
+            
+			<br/>
+			<br/>
+			
+            <label for=>Colegio </label>
+            <input type="text"name="colegio" placeholder="Colegio">
+            
+			<br/>
+			<br/>
+			
+            <label >Telefono fijo</label>
+            <input type="number" name="telFijo" placeholder="Telefono fijo">
+            
+			<br/>
+			<br/>
+			
+            <label>Telefono movil</label>
+            <input type="number" name="telMovil" placeholder="Telefono movil">
+            
+            <br/>
+			<br/>
+			
+        <button type="submit">Guardar alumno</button>
+      </form>
+
+</body>
+
+</html>
