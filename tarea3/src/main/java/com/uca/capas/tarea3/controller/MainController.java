@@ -20,7 +20,7 @@ public class MainController {
 		return mav;
 	}
 
-	@RequestMapping("/alumno")
+	@RequestMapping("/informacion")
 	public ModelAndView alumno(
 			@RequestParam String nombres, 
 			@RequestParam String apellidos,
@@ -68,10 +68,10 @@ public class MainController {
 			
 	public boolean validarFecha(String fechaNacimiento) throws ParseException {
 		String fechaMinima = "2003-01-01";
-		SimpleDateFormat formateador = new SimpleDateFormat("yyyy-MM-dd"); 
+		SimpleDateFormat conversor = new SimpleDateFormat("yyyy-MM-dd"); 
 		
-		Date fecha1 = formateador.parse(fechaNacimiento);
-		Date fecha2 = formateador.parse(fechaMinima);
+		Date fecha1 = conversor.parse(fechaNacimiento);
+		Date fecha2 = conversor.parse(fechaMinima);
 		
 		if(fecha1.before(fecha2)) {
 			return true;

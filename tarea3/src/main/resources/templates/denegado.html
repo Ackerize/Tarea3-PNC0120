@@ -2,16 +2,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <title>Errores</title>
 </head>
 <body>
   
-    <p class="mb-0">Se encontraron los siguientes errorres: </p>
+    <p>Oh no! Hay errores en los datos ingresados: </p>
     <table>
         <tr th:each="error : ${req}">
-            <td class="small-mb-1" th:text="${error}"/>
+            <td th:text="${error}"/>
         </tr>
     </table>
 </body>
